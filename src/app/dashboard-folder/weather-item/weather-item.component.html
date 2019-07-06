@@ -1,0 +1,17 @@
+
+<div class="row weather-item-container">
+  <div class="col-6">
+      <h5 class="card-title app-h5-light ">Wetter am {{ weatherItem.datum }} um {{ weatherItem.zeit }}</h5>
+  </div>
+
+  <div class="col-6">
+      <div class="row">
+          <div class="col-12">
+              <p class="card-text">Der Luftdruck lag bei {{ weatherItem.luftdruck }} und die Windstärke in Richtung {{ weatherItem.richtung }} betrug {{ weatherItem.wind }}</p>
+          </div>
+          <div class="col-12">
+              <p class="card-text">Die Temperatur betrug {{ weatherItem.tempA }} mit einer Luftfeuchtigkeit von {{ weatherItem.feuchteA }}</p>
+          </div>
+        </div>
+  </div>
+</div>

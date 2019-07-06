@@ -1,0 +1,19 @@
+
+<h5 class="card-title">Frage</h5>
+<p class="card-text">{{searchItem.title}}</p>
+<h5 class="card-title">Gefragt von</h5>
+<div class="row">
+  <div class="col-md-6">
+      <img [src]="searchItem.owner.profile_image" alt="">
+  </div>
+  <div class="col-md-6">
+    <p>Name: {{searchItem.owner.display_name}}</p>
+    <p>Reputation: {{searchItem.owner.reputation}}</p>
+  </div>
+  <div class="class-12  mt-3">
+      <a class="card-text" [href]="searchItem.link">Sieh dir die Frage und Antworten direkt auf Stackoverflow an</a>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,12 @@
+
+<div  class="card" *ngIf="weatherSearchResultItems">
+    <div  class="card-body">
+  <h5 class="card-title app-h5-dark"><strong>Wetter Stackoverflow Fragen und Wetterfakten</strong></h5>
+  <ul class="list-group list-group-flush" *ngFor="let item of weatherDataJSON | limitElements:totalNumberEntries; let i = index;">
+    <li class="list-group-item">
+        <app-search-item *ngIf="i % 2 === 0" [searchItem]="weatherSearchResultItems[indexSearchResults]"></app-search-item>
+        <app-weather-item *ngIf="i % 2 !== 0" [weatherItem]="item"></app-weather-item>
+    </li>
+  </ul>
+</div>
+</div>

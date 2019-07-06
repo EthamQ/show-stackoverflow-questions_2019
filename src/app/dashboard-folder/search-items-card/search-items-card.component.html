@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-body">
+      <h5 class="card-title app-h5-dark"><strong>Stackoverflow Fragen über {{query}}</strong></h5>
+      <ul class="list-group list-group-flush" *ngFor="let item of searchItems | limitElements:totalAmountSearchItems">
+          <li class="list-group-item">
+              <app-search-item [searchItem]="item"></app-search-item>
+          </li>
+        </ul>
+  </div>
+</div>

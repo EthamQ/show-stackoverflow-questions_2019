@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/sass/styles.scss";
+@import "./colors.scss";
+
+.app-h5-dark {
+    font-size: 2rem;
+    color: $main_color_dark;
+}
+
+.app-h5-light {
+    font-size: 2rem;
+    color: $main_color_light;
+}
+
+
